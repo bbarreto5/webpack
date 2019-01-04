@@ -1,0 +1,12 @@
+npm i webpack webpack-cli --save-dev
+npm list webpack
+npm install style-loader css-loader --save-dev
+npm install --save-dev extract-text-webpack-plugin
+npm i -D extract-text-webpack-plugin@next
+
+"scripts"
+"build": "webpack index.js --output bundle.js --mode development"
+"build:local": "webpack"
+"dev": "webpack --mode development"
+"build": "webpack --mode production"
+"build:external": "webpack --config ./external/webpack.config.js --mode development"

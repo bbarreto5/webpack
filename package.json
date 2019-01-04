@@ -1,0 +1,26 @@
+{
+  "name": "proyecto-platzi",
+  "version": "1.0.0",
+  "description": "turial de webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "build:external": "webpack --config ./external/webpack.config.js --mode development",
+    "build:css-style-loader": "webpack --config ./css-style-loader/webpack.config.js --mode development",
+    "build:plugin-extract-text": "webpack --config ./plugin-extract-text/webpack.config.js --mode development"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "bbarreto5",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "2.1.0",
+    "extract-text-webpack-plugin": "4.0.0-beta.0",
+    "style-loader": "0.23.1",
+    "webpack": "4.28.3",
+    "webpack-cli": "3.2.0"
+  }
+}
